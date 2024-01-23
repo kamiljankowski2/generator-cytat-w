@@ -1,0 +1,88 @@
+body {
+    background-color: #1F2631;
+    min-height: 100vh;
+    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  p {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  .advice {
+    background-color: #313A49;
+    width: 400px;
+    padding: 40px 40px 65px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 25px;
+    display: flex;
+  }
+
+  .advice::after {
+    content: "";
+    background-image: url('./images/pattern-divider-mobile.svg');
+    width: 100%;
+    background-size: contain;
+    background-position: center;
+    height: 16px;
+  }
+
+  .advice-button {
+    aspect-ratio: 1;
+    width: 64px;
+    height: 64px;
+    background-color: #53FFAA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: none;
+    position: absolute;
+    bottom: 0;
+    transform: translatey(50%);
+    transition: .5s;
+
+  }
+
+  .advice-button::after {
+    content: "";
+    background-image: url('./images/icon-dice.svg');
+    background-size: contain;
+    background-position: center;
+    width: 24px;
+    height: 24px;
+    transition: .8s;
+  }
+
+  .advice-button:hover::after {
+    transform: rotate(720deg)
+  }
+
+  .advice-button:hover {
+    cursor: pointer;
+    background-color:#18bc6a
+  }
+
+  .advice-advice {
+    color: #BAC8D4;
+    font-weight: 600;
+    text-align: center;
+    font-size: 22px;
+    min-height: 60px;
+  }
+
+  .advice-id {
+    color: #63fdb0;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 3px;
+  }
